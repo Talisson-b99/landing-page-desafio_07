@@ -1,0 +1,61 @@
+@import "../../styles/base/index";
+
+.s-testimonials {
+  .container {
+    padding-block: 120px;
+    > h5 {
+      color: $color-orange;
+      text-align: center;
+      font-family: Gilroy-SemiBold;
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 3.15px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      color: $color-black;
+      text-align: center;
+      font-family: Gilroy-Bold;
+      font-size: 42px;
+      font-weight: 400;
+      text-transform: capitalize;
+      margin-block: 20px 60px;
+    }
+
+    ul {
+      @include flex(row, center, center);
+      gap: 38px;
+    }
+
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev,
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+      top: 200px;
+    }
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+      content: "";
+      font-family: initial;
+      font-size: initial;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      border-radius: 50%;
+      z-index: 10;
+      background: url("../../assets/arrow-pagination.svg") no-repeat center
+        center;
+      background-size: 300%;
+      background-position: -50px -41px;
+    }
+
+    .swiper-button-prev:after {
+      background: url("../../assets/arrow-pagination-left.svg") no-repeat center
+        center;
+      background-size: 300%;
+      background-position: -50px -41px;
+    }
+  }
+}

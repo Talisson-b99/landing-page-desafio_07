@@ -1,0 +1,27 @@
+@import "../../styles/base/index";
+
+.section__products {
+  background-color: #3f494e;
+  padding: 40px 60px;
+  .container {
+    @include flex(column, center, center);
+
+    .subtitle {
+      color: $color-white;
+      font-family: Gilroy-Bold;
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 30px;
+    }
+
+    .tabs {
+      margin-bottom: 86px;
+    }
+
+    .btn {
+      margin-top: 60px;
+    }
+  }
+}

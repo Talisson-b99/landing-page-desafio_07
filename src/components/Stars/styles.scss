@@ -1,0 +1,5 @@
+@import "../../styles/base/index";
+
+.container__stars {
+  @include flex(row, center, flex-start);
+}

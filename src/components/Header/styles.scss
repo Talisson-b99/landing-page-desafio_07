@@ -1,0 +1,42 @@
+@import "../../styles/base/index.scss";
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  .container {
+    @include flex(row, center, space-between);
+    height: 115px;
+  }
+
+  .navbar {
+    &__list {
+      @include flex(row, center, flex-start);
+      gap: 64px;
+
+      li {
+        a {
+          color: $color-white;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .cart {
+    position: relative;
+    .item-count {
+      @include flex(row, center, center);
+      position: absolute;
+      top: 0;
+      right: -4.3px;
+      width: 20px;
+      height: 25.244px;
+      border-radius: 50%;
+      background-color: #e58411;
+      font-size: 18px;
+      color: $color-white;
+      font-weight: bold;
+    }
+  }
+}

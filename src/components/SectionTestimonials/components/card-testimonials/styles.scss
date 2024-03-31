@@ -1,0 +1,67 @@
+@import "../../../../styles/base/index";
+
+.card__container {
+  width: 370px;
+  height: 476px;
+  background: url(../../../../assets/bg-card-01.png);
+  position: relative;
+  filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.3));
+
+  .card__content {
+    z-index: 10;
+    width: 334px;
+    height: 239px;
+    position: absolute;
+    left: 18px;
+    top: 215px;
+    background: url("../../../../assets/shape-card.svg") no-repeat center center;
+
+    h3 {
+      color: $color-black;
+      text-align: center;
+      font-family: Gilroy-Bold;
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: capitalize;
+    }
+
+    h5 {
+      color: $color-black;
+      text-align: center;
+      font-family: Gilroy-Regular;
+      font-size: 12px;
+      font-weight: 400;
+      margin-block: 6px 22px;
+    }
+
+    p {
+      text-align: center;
+      color: $color-black;
+      text-align: center;
+      font-family: Gilroy-Regular;
+      font-size: 14px;
+      font-weight: 400;
+      opacity: 0.8;
+      max-width: 252px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    img {
+      margin: 0 auto;
+      filter: drop-shadow(0px 2px 15px rgba(0, 0, 0, 0.4));
+    }
+
+    .stars {
+      .container__stars {
+        justify-content: center;
+        margin-top: 22px;
+      }
+    }
+  }
+}
+
+// img {
+//   width: 334px;
+//   height: 239px;
+// }

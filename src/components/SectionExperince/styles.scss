@@ -1,0 +1,44 @@
+@import "../../styles/base/index";
+
+.s__experiences {
+  .container {
+    @include flex(row, center, space-between);
+    gap: 80px;
+    padding-block: 120px;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 556px;
+
+    h5 {
+      color: $color-orange;
+      font-family: Gilroy-SemiBold;
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 3.15px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      color: $color-black;
+      font-family: Gilroy-Bold;
+      font-size: 42px;
+      font-weight: 400;
+      text-transform: capitalize;
+      padding-top: 20px;
+    }
+
+    p {
+      color: $color-black;
+      font-family: Gilroy-Regular;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 185%;
+      padding-block: 20px 24px;
+    }
+  }
+
+  &__img {
+  }
+}

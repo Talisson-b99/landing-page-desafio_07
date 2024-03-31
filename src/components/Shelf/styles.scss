@@ -1,0 +1,6 @@
+@import "../../styles/base/index";
+
+.shelf {
+  @include flex(row, center, center);
+  gap: 42px;
+}

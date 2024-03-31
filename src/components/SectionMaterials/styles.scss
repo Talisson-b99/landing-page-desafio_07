@@ -1,0 +1,64 @@
+@import "../../styles/base/index";
+
+.s__materials {
+  background-color: #3f494e;
+
+  .container {
+    @include flex(row, center, f);
+    gap: 80px;
+    padding-block: 120px;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 556px;
+    gap: 1;
+
+    h5 {
+      color: $color-orange;
+      font-family: Gilroy-SemiBold;
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 3.15px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      color: $color-white;
+      font-family: Gilroy-Bold;
+      font-size: 42px;
+      font-weight: 400;
+      text-transform: capitalize;
+      padding-top: 20px;
+    }
+
+    p {
+      color: $color-white;
+      font-family: Gilroy-Regular;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 185%;
+      padding-block: 20px 24px;
+    }
+  }
+
+  &__img {
+    display: flex;
+    align-items: flex-end;
+    margin-right: -350px;
+    overflow: hidden;
+
+    s > img:last-child {
+      max-height: 445px;
+      border-radius: 20px;
+      height: 100%;
+      width: 629px;
+    }
+    div {
+      margin-right: 42px;
+      img:first-child {
+        margin-bottom: 26px;
+      }
+    }
+  }
+}

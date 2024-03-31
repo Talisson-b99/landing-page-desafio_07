@@ -1,0 +1,69 @@
+@import "../../styles/base/index";
+
+.productCard {
+  background-color: $color-white;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  height: 441px;
+  width: 268px;
+
+  &__shadow {
+    position: absolute;
+    bottom: 210px;
+  }
+
+  &__img {
+    position: absolute;
+    top: -50px;
+  }
+
+  &__content {
+    margin-top: 235px;
+
+    h5 {
+      color: $color-gray-medium;
+      font-size: 16.755px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    h3 {
+      color: $color-blue;
+      font-size: 21.325px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: capitalize;
+      margin-block: 6px;
+    }
+
+    &--priceBox {
+      @include flex(row, center, space-between);
+      margin-top: 36px;
+
+      .price {
+        color: $color-blue;
+        font-size: 21.325px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        @include flex(row, flex-start, flex-start);
+        gap: 3px;
+
+        span {
+          font-size: 15.232px;
+        }
+      }
+
+      .buy__btn {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        @include flex(row, center, center);
+        background-color: $color-blue;
+      }
+    }
+  }
+}

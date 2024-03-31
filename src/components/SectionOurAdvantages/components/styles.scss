@@ -1,0 +1,21 @@
+@import "../../../styles/base/index";
+
+.card-advantages {
+  max-width: 284px;
+
+  h3 {
+    color: $color-black;
+    font-family: "Gilroy-Bold";
+    font-weight: 400;
+    font-size: 24px;
+    opacity: 0.9;
+  }
+
+  p {
+    color: $color-black;
+    font-size: 16px;
+    line-height: 185%;
+    opacity: 0.8;
+    margin-block: 20px 30px;
+  }
+}

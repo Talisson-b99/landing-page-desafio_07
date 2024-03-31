@@ -1,0 +1,87 @@
+@import "../../styles/base/index";
+
+footer {
+  background-color: $color-gray-light;
+  padding-block: 118px 58px;
+
+  .links {
+    display: grid;
+    grid-template-columns: 293px 133px 133px 133px;
+    justify-content: space-between;
+
+    h2 {
+      color: $color-black;
+      font-family: Gilroy-Bold;
+      font-size: 28px;
+      font-weight: 400;
+      letter-spacing: 0.28px;
+      text-transform: capitalize;
+      margin-bottom: 29px;
+    }
+
+    p {
+      color: $color-black;
+      font-family: Gilroy-Medium;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 160%;
+    }
+
+    h4 {
+      color: $color-orange-light;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: -0.232px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: $color-black;
+      font-family: Gilroy-Medium;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 160%;
+    }
+  }
+
+  .copyright {
+    margin-top: 131px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .copy {
+      span {
+        color: #1e2833;
+        opacity: 0.5;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: -0.205px;
+      }
+    }
+
+    .terms {
+      display: flex;
+      gap: 40px;
+      span {
+        color: $color-black;
+        font-family: Gilroy-Medium;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 24px */
+      }
+    }
+  }
+}
